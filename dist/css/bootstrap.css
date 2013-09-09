@@ -6927,3 +6927,7 @@ td.visible-print {
     display: none !important;
   }
 }
+
+#gcba-header {
+  background-color: #ffd300;
+}
