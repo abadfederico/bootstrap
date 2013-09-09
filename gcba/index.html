@@ -12,9 +12,6 @@
     <!-- Bootstrap core CSS -->
     <link href="../dist/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -25,7 +22,15 @@
   <body>
     <header id="gcba-header">
       <div class="container">
-        <h1>GCBA</h1>
+        <div class="pull-left">
+          <img src="img/logo.png" />
+        </div>
+        <form class="navbar-form pull-right" role="search">
+          <div class="form-group">
+            <input type="search" class="form-control search" placeholder="Buscador...">
+          </div>
+          <button type="submit" class="btn btn-link"><span class="glyphicon glyphicon-search"></span></button>
+        </form>
       </div>
     </header>
    <div class="navbar navbar-inverse">
@@ -36,15 +41,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div class="navbar-collapse collapse" style="height: 1px;">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#">Inicio</a></li>
+            <li><a href="#about">La ciudad</a></li>
+            <li><a href="#contact">Gobierno</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Atencion Ciudadana <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>
@@ -55,61 +59,170 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
+            <li><a href="#contact">Info Publica</a></li>
+            <li><a href="#contact">Turismo</a></li>
+            <li><a href="#contact">Noticias</a></li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+    <div class="news-slide">
+      <div id="carousel-example-generic" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/1.jpg" alt="...">
+            <div class="carousel-caption">
+              <h2>En Buenos Aires, Tokio ganó la sede para los Juegos Olímpicos 2020</h2>
+              <p>La capital de Japón compitió junto a Madrid y Estambul, a quien venció en la votación final. Será la segunda vez que organice un Juego Olímpico. Histórica definición en el hotel Hilton de Puerto Madero. La lucha volverá a la competencia olímpica. Galería de imágenes.</p> 
+            </div>
+          </div>
+           <div class="item">
+            <img src="img/2.jpg" alt="...">
+            <div class="carousel-caption">
+              <h2>En Buenos Aires, Tokio ganó la sede para los Juegos Olímpicos 2020</h2>
+              <p>La capital de Japón compitió junto a Madrid y Estambul, a quien venció en la votación final. Será la segunda vez que organice un Juego Olímpico. Histórica definición en el hotel Hilton de Puerto Madero. La lucha volverá a la competencia olímpica. Galería de imágenes.</p> 
+            </div>
+          </div>
+
+           <div class="item">
+            <img src="img/3.jpg" alt="...">
+            <div class="carousel-caption">
+              <h2>En Buenos Aires, Tokio ganó la sede para los Juegos Olímpicos 2020</h2>
+              <p>La capital de Japón compitió junto a Madrid y Estambul, a quien venció en la votación final. Será la segunda vez que organice un Juego Olímpico. Histórica definición en el hotel Hilton de Puerto Madero. La lucha volverá a la competencia olímpica. Galería de imágenes.</p> 
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="icon-next"></span>
+        </a>
       </div>
     </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    <div class="shortcuts">
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-3">
+            <a class="circle softblue" href="">
+              <span class="glyphicon glyphicon-list-alt"></span>
+            </a>
+            <h2><a href="">Guia de Tramites</a></h2>
+          </div>
+          <div class="col-md-3">
+            <a class="circle green" href="">
+              <span class="glyphicon glyphicon-user"></span>
+            </a>
+            <h2><a href="">Atencion Ciudadana</a></h2>
+         </div>
+          <div class="col-md-3">
+            <a class="circle softgreen" href="">
+              <span class="glyphicon glyphicon-tree-deciduous"></span>
+            </a>
+            <h2><a href="">Ciudad Verde</a></h2>
+          </div>
+          <div class="col-md-3">
+            <a class="circle" href="">
+              <span class="glyphicon glyphicon-map-marker"></span>
+            </a>
+            <h2><a href="">Mapa Interactivo</a></h2>
+          </div>
         </div>
       </div>
+      </div>
 
+      <div class="modules-boxxes">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="boxxy">
+                <div class="boxxy-header">
+                  <h3>Agenda Cultural</h3>
+                </div>
+                <div class="boxxy-body">
+                  <img class="destacado" src="img/1.jpg" />
+                  <div class="boxxy-content">
+                    <span class="circle red">
+                      <span class="glyphicon glyphicon-camera"></span>
+                    </span>
+                    <h3>Buenos Aires Market  en Parque Rivadavia</h3>
+                    <p>Se estrena,en la Sala Cunill Cabanellas del Teatro San Martín, Querido Ibsen: soy Nora de Griselda Gambaro, dirigida por Silvio Lang. El elenco está integrado por Belén Blanco, Agustín Rittano, Alberto Suárez, Ezequiel Díaz, Leonardo Saggese, Victoria Roland, Pochi Ducasse y Pablo Cécere. La colaboración artística y el entrenamiento físico son de Alina Folini, la música original es de Pablo Cécere, la escenografía e iluminación son de Gonzalo Córdova y el diseño de arte y vestuario de Renata Schussheim.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="boxxy">
+                <div class="boxxy-header">
+                  <h3>Tramites y Servicios</h3>
+                </div>
+                <div class="boxxy-body">
+                  <img class="destacado" src="img/1.jpg" />
+                  <div class="list-group">
+                    <div class="list-group-item search-item">
+                      <form role="search">
+                        <input type="text" class="form-control" placeholder="Buscar tramite">
+                      </form>
+                    </div>
+                    <a href="#" class="list-group-item">Cras justo odio</a>
+                    <a href="#" class="list-group-item">Duplicado de DNI</a>
+                    <a href="#" class="list-group-item">AGIP - Rentas Ciudad</a>
+                    <a href="#" class="list-group-item">Vencimiento de patentes</a>
+                    <a href="#" class="list-group-item">Vestibulum at eros</a>
+                    <a href="#" class="list-group-item">Cras justo odio</a>
+                    <a href="#" class="list-group-item">Duplicado de DNI</a>
+                    <a href="#" class="list-group-item">AGIP - Rentas Ciudad</a>
+                    <a href="#" class="list-group-item">Vencimiento de patentes</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="http://adn.buenosaires.gob.ar/www/images/7102aa5198211a9cd0bde49acf172315.png" />
+            </div>
+          </div>
+        </div>
+      </div>
       <hr>
-
+      <div class="container">
+        <div class="bs-example">
+      <button type="button" class="btn btn-default">Default</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-inverted">Danger</button>
+      <button type="button" class="btn btn-link">Link</button>
+      <br/><br/><br/><br/><br/>
+    </div>
+      </div>
       <footer>
-        <p>&copy; Company 2013</p>
+        <div class="container">
+        Holi
+        </div>
       </footer>
-    </div> <!-- /container -->
+
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../assets/js/jquery.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
   </body>
 </html>
