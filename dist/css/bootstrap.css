@@ -300,7 +300,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -476,7 +476,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Gotham Bold';
+  font-family: 'Gotham';
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -6928,6 +6928,16 @@ td.visible-print {
   }
 }
 
+@font-face {
+  font-family: 'Gotham';
+  src: url('../../fonts/gotham.eot');
+  src: url('../../fonts/gotham.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../../fonts/gotham.woff') format('woff'), /* Modern Browsers */
+   url('../../fonts/gotham.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../../fonts/gotham.svg#svgGotham') format('svg');/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+
 a {
   font-weight: bold;
 }
@@ -6943,7 +6953,6 @@ body {
 
 #gcba-header .search {
   border-color: #c2a000;
-  border-radius: 30px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
@@ -6958,6 +6967,7 @@ body {
 
 .navbar {
   margin-bottom: 0!important;
+  border-radius: 0 !important;
 }
 
 .news-slide .item {
@@ -6966,6 +6976,7 @@ body {
 
 .news-slide .item img {
   position: relative;
+  width: 100%;
   vertical-align: bottom;
 }
 
@@ -7063,6 +7074,7 @@ body {
 
 .boxxy img.destacado {
   width: 100%;
+  max-height: 170px;
 }
 
 .boxxy .boxxy-header {
@@ -7073,6 +7085,7 @@ body {
 .boxxy .boxxy-header h3 {
   margin: 25px 0!important;
   font-size: 26px;
+  letter-spacing: -1px;
 }
 
 .boxxy .boxxy-content {

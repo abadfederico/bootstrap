@@ -12,10 +12,20 @@
 @gcba-softgreen:       #AEC90B;
 
 
+@font-face {
+	font-family: 'Gotham';
+	src: url('../../fonts/gotham.eot'); /* IE9 Compat Modes */
+	src: url('../../fonts/gotham.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('../../fonts/gotham.woff') format('woff'), /* Modern Browsers */
+	     url('../../fonts/gotham.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('../../fonts/gotham.svg#svgGotham') format('svg'); /* Legacy iOS */
+	}
+
+
 // GCBA Typo
 // -------------------------
-@headings-font-family:    'Gotham Bold';
-@font-family-sans-serif:  "Open Sans", Helvetica,Arial, sans-serif;
+@headings-font-family:    'Gotham';
+@font-family-sans-serif:  'Open Sans', Helvetica,Arial, sans-serif;
 
 a {
   font-weight:bold;
@@ -30,7 +40,6 @@ body {
 }
 
 #gcba-header .search {
-  border-radius: 30px;
   border-color: darken(@gcba-primary, 12%);
   box-shadow: 0 1px 0 rgba(255,255,255,0.2)
 }
@@ -49,6 +58,7 @@ body {
 }
 .navbar {
   margin-bottom:0!important;
+  border-radius:0!important
 }
 
 .news-slide {
@@ -57,6 +67,7 @@ body {
     img {
       vertical-align: bottom;
       position:relative;
+      width:100%;
     }
   }
   
@@ -145,6 +156,7 @@ body {
   box-shadow: 0 1px 1px rgba(0,0,0,0.1), inset 0 -3px 0 #EEE;
   img.destacado {
       width:100%;
+      max-height:170px;
     }
   .boxxy-header {
     text-align: center;
@@ -152,6 +164,8 @@ body {
     h3 {
       margin: 25px 0px!important;
       font-size: 26px;
+      letter-spacing:-1px;
+
     }
   }
   .boxxy-content {
