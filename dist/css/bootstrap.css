@@ -6956,9 +6956,35 @@ body {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
-#gcba-header button {
+#gcba-header .form-group {
+  margin: 0;
+}
+
+#gcba-header button.btn-search {
+  position: absolute;
+  top: 2px;
+  right: 15px;
   margin-left: -45px;
+  font-size: 20px;
   color: #999;
+}
+
+#gcba-header .dropdown-menu {
+  z-index: 2000;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -3px 0 #eeeeee;
+}
+
+.user-box {
+  margin-top: 12px;
+}
+
+.user-box a {
+  font-weight: normal;
+  color: #917207;
+}
+
+.user-box a strong {
+  color: #463703;
 }
 
 .navbar-nav li a {
@@ -6980,9 +7006,27 @@ body {
   vertical-align: bottom;
 }
 
+.news-slide .carousel-caption {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 0 10px 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.news-slide .carousel-caption h2 {
+  font-size: 32px;
+}
+
+.news-slide .carousel-caption p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
 .shortcuts {
   padding: 50px 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-align: center;
   background: white;
 }
@@ -7018,6 +7062,33 @@ body {
 
 .shortcuts h2 a {
   color: #000;
+}
+
+footer {
+  padding: 50px;
+}
+
+footer h4 {
+  color: #ffd300;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  list-style: none;
+}
+
+footer ul li {
+  padding: 3px 0;
+}
+
+footer ul li a {
+  color: #EEE;
+}
+
+footer ul li a:hover {
+  color: #FFF;
 }
 
 .circle.softgreen {
@@ -7135,12 +7206,12 @@ footer {
 }
 
 .btn:hover {
-  box-shadow: 0 2px 2px #cccccc, inset 0 -2px 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0, 0, 0, 0.1) !important;
 }
 
 .btn:active {
   top: 1px;
-  box-shadow: 0 1px 0 #ffffff, inset 0 1px 5px rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), inset 0 1px 5px rgba(0, 0, 0, 0.3) !important;
 }
 
 .btn-default,

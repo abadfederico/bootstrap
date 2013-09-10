@@ -36,17 +36,39 @@ body {
 }
 #gcba-header {
   background-color:#FFD300;
-  padding:20px 0
-}
+  padding:20px 0;
 
-#gcba-header .search {
+  .search {
   border-color: darken(@gcba-primary, 12%);
   box-shadow: 0 1px 0 rgba(255,255,255,0.2)
+  }
+  .form-group {
+    margin:0
+  }
+  button.btn-search {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    margin-left: -45px;
+    color: #999;
+    font-size: 20px;
+  }
+  .dropdown-menu {
+    z-index:2000;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1), inset 0 -3px 0 #EEE;
+  }
+
 }
 
-#gcba-header button {
-  color:#999;
-  margin-left:-45px
+.user-box {
+  margin-top:12px;
+  a {
+    font-weight:normal;
+    color:#917207;
+    strong {
+      color:#463703
+    }
+  }
 }
 
 
@@ -70,14 +92,29 @@ body {
       width:100%;
     }
   }
-  
+  .carousel-caption {
+    padding:0 0 10px 0;
+    bottom:0px;
+    background: rgba(0,0,0,0.3);
+    text-align:center;
+    width:100%;
+    left:0;
+
+    h2 {
+      font-size:32px;
+    }
+    p {
+      opacity: 0.8;
+      font-size:16px
+    }
+  }
 }
 
 .shortcuts  {
   background: white;
   padding: 50px 0;
   text-align:center;
-  margin-bottom:20px;
+  margin-bottom:50px;
   .circle {
     width: 100px;
     background: @gcba-primary;
@@ -111,6 +148,27 @@ body {
   }
 }
 
+footer {
+  padding: 50px;
+  h4 {
+    color: @gcba-primary;
+  }
+  ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+    font-size:12px;
+    li {
+      padding:3px 0;
+      a {
+        color:#EEE;
+        &:hover {
+          color:#FFF;
+        } 
+      }
+    }
+  }
+}
 .circle.softgreen {
     background: @gcba-softgreen;
     border-color: @gcba-softgreen;
@@ -210,10 +268,10 @@ footer {
   font-weight:bold;
   position:relative;
   &:hover {
-      box-shadow: 0 2px 2px #CCC,inset 0 -2px 0 rgba(0,0,0,0.1)!important;
+      box-shadow: 0 2px 2px rgba(0,0,0,0.1),inset 0 -2px 0 rgba(0,0,0,0.1)!important;
   }
   &:active {
-    box-shadow: 0 1px 0 #FFF,inset 0 1px 5px rgba(0,0,0,0.3)!important;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4),inset 0 1px 5px rgba(0,0,0,0.3)!important;
     top:1px;
   }
 }
