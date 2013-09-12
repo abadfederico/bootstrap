@@ -1,0 +1,58 @@
+
+.stp-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.stp-content-panel {
+}
+
+.stp-nav {
+  background: #101318;
+  border-right: 1px solid black;
+  width: 272px;
+}
+.stp-nav nav {
+  display: block;
+}
+.stp-nav  nav > a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  height: 42px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0 0 0 10px;
+  position: relative;
+  text-decoration: none;
+}
+.stp-nav nav > a:after {
+  background: transparent url('img/arrow-right-white.png') no-repeat left center;
+  content: ' ';
+  display: block;
+  height: 41px;
+  opacity: 0.3;
+  position: absolute;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+  right: 0;
+  top: 0;
+  width: 19px;
+  -webkit-background-size: 19px 14px;
+  -moz-background-size: 19px 14px;
+  -o-background-size: 19px 14px;
+  background-size: 19px 14px;
+}
+.stp-nav nav > a.selected {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+}
+.stp-nav nav > a.selected:after {
+  opacity: 1;
+}
