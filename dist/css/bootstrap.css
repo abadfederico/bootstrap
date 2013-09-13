@@ -7017,9 +7017,9 @@ body {
   vertical-align: bottom;
 }
 
-.news-slide .carousel-control.left,
-.news-slide .carousel-control.right {
-  background-image: none!important;
+.news-slide .carousel-control {
+  width: 5%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .news-slide .carousel-caption {
@@ -7577,6 +7577,11 @@ footer {
 .header-button:active,
 .header-button:hover {
   color: #000000;
+}
+
+.header-button.right {
+  right: 0!important;
+  left: auto;
 }
 
 @media (max-width: 768px) {
