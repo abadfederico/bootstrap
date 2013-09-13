@@ -131,6 +131,16 @@ body {
   }
 
    @media (max-width: @screen-sm)  {
+      .carousel-indicators {
+        top:10px;
+        li {
+          border-color:#000;
+          opacity:0.6
+        }
+        .active {
+          background:#000
+        }
+      }
       h2  {
         font-size:18px!important;
         color:#000;
@@ -605,17 +615,19 @@ footer {
   color:#000;
   display:block;
   font-size:18px;
-  padding:12px;
+  padding:12px 0;
   letter-spacing: -1px;
+  max-width:300px
 }
 
 .header-button {
   color: #000;
   font-size: 18px;
   height: 28px;
-  left: 5px;
+  left: 0;
+  top: 0;
   line-height: 26px;
-  padding: 0 8px;
+  padding: 11px 15px;
   position: absolute;
   -webkit-transform: translatez(0);
   -moz-transform: translatez(0);
@@ -623,7 +635,7 @@ footer {
   transform: translatez(0);
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-  top: 10px;
+  
   &:active, &:hover {
     color:#000
   }

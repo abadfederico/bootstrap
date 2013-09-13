@@ -123,7 +123,11 @@
     <div class="news-slide">
       <div id="carousel-example-generic" class="carousel slide">
         <!-- Indicators -->
-
+        <ol class="carousel-indicators hidden-md hidden-lg">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
@@ -260,7 +264,10 @@
           <div class="row">
             <div class="col-md-2">
               <h4>La Ciudad</h4>
-              <ul>
+              <select class="hidden-md form-control">
+                <option>Ciudad limpia</option>
+              </select>
+              <ul class="visible-md ">
                 <li><a href="">Ciudad Limpia</a></li>
                 <li><a href="">Mapa Interactivo</a></li>
                 <li><a href="">Agenda Cultural</a></li>
@@ -289,7 +296,10 @@
 
             <div class="col-md-2">
               <h4>Gobierno</h4>
-              <ul>
+              <select class="hidden-md form-control">
+                <option>Jefe de Gobierno</option>
+              </select>
+              <ul class="visible-md">
                 <li><a href="">Jefe de Gobierno</a></li>
                 <li><a href="">Vicejefatura de Gobierno</a></li>
                 <li><a href="">Jefatura de Gabinete</a></li>
@@ -326,7 +336,10 @@
 
             <div class="col-md-2">
               <h4>Tramites</h4>
-              <ul>
+              <select class="hidden-md form-control">
+                <option>Guia de tramites</option>
+              </select>
+              <ul class="visible-md">
                 <li><a href="">Guía de Trámites</a></li>
                 <li><a href="">Bs As Online</a></li>
                 <li><a href="">Rentas</a></li>
@@ -350,7 +363,10 @@
 
             <div class="col-md-2">
               <h4>Info Publica</h4>
-              <ul>
+              <select class="hidden-md form-control">
+                <option>Boletin Oficial</option>
+              </select>
+              <ul class="visible-md">
                 <li><a href="">Boletín Oficial</a></li>
                 <li><a href="">Normativa</a></li>
                 <li><a href="">Organigrama</a></li>

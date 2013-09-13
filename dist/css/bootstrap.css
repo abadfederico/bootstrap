@@ -7041,6 +7041,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  .news-slide .carousel-indicators {
+    top: 10px;
+  }
+  .news-slide .carousel-indicators li {
+    border-color: #000;
+    opacity: 0.6;
+  }
+  .news-slide .carousel-indicators .active {
+    background: #000000;
+  }
   .news-slide h2 {
     font-size: 18px!important;
     color: #000;
@@ -7537,7 +7547,8 @@ footer {
 
 .title-bar {
   display: block;
-  padding: 12px;
+  max-width: 300px;
+  padding: 12px 0;
   margin: 0 auto;
   font-family: 'Gotham';
   font-size: 18px;
@@ -7548,10 +7559,10 @@ footer {
 
 .header-button {
   position: absolute;
-  top: 10px;
-  left: 5px;
+  top: 0;
+  left: 0;
   height: 28px;
-  padding: 0 8px;
+  padding: 11px 15px;
   font-size: 18px;
   line-height: 26px;
   color: #000;
