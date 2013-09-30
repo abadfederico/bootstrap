@@ -6998,6 +6998,16 @@ body {
   color: #463703;
 }
 
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+  left: -25%;
+}
+
+.carousel-control .icon-right,
+.carousel-control .glyphicon-chevron-right {
+  right: -25%;
+}
+
 .navbar-nav li a {
   font-weight: bold;
 }
@@ -7007,6 +7017,100 @@ body {
   border-radius: 0 !important;
 }
 
+.news-slide {
+  padding: 30px 0;
+  background: #3b3b3b;
+}
+
+.news-slide .related {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 25%;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.news-slide .related strong {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.news-slide .related p.bajada {
+  padding: 15px;
+  color: #FFF;
+}
+
+.news-slide .related ul {
+  padding: 0;
+  margin: 0;
+}
+
+.news-slide .related ul li.related-title {
+  padding: 10px 25px;
+  border: 0 none;
+}
+
+.news-slide .related ul li {
+  list-style: none;
+}
+
+.news-slide .related ul li h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -1px;
+}
+
+.news-slide .related ul li h3 a {
+  display: block;
+  padding: 15px 20px;
+  color: #FFF;
+  text-decoration: none;
+  border-left: 5px solid transparent;
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+}
+
+.news-slide .related ul li h3 a:hover {
+  color: #FFd300;
+  background: #000;
+  border-left: 5px solid #FFd300;
+}
+
+.news-slide .related.stats li {
+  padding: 10px 20px;
+}
+
+.news-slide .related.stats h3 {
+  font-size: 32px;
+  color: #FFF;
+}
+
+.news-slide .related.stats p {
+  margin: 0;
+  color: #999;
+}
+
+.news-slide .alert {
+  margin: 20px 0 0 0!important;
+}
+
+.news-slide .alert .glyphicon {
+  float: left;
+  margin-right: 20px;
+  font-size: 34px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.news-slide .carousel-inner {
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
 .news-slide .item {
   max-height: 400px;
 }
@@ -7014,30 +7118,36 @@ body {
 .news-slide .item img {
   position: relative;
   width: 100%;
-  vertical-align: bottom;
+  vertical-align: top;
 }
 
-.news-slide .carousel-control {
-  width: 5%;
-  background: rgba(0, 0, 0, 0.4);
+.news-slide .carousel-control.left {
+  border-radius: 5px 0 0 5px;
+}
+
+.news-slide .carousel-control.right {
+  border-radius: 0 5px 5px 0;
 }
 
 .news-slide .carousel-caption {
   bottom: 0;
   left: 0;
-  width: 100%;
-  padding: 0 0 10px 0;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.3);
+  width: 75%;
+  padding: 0 40px 10px 20px;
+  color: #fff;
+  text-align: left;
+  text-shadow: 0 0 6px black;
+  background: url("http://www1.nyc.gov/assets/home/images/modules/homepage-hero/hero-caption-extragradient.png");
 }
 
 .news-slide .carousel-caption h2 {
-  font-size: 32px;
+  font-size: 36px;
+  line-height: 1.2em;
 }
 
 .news-slide .carousel-caption p {
-  font-size: 16px;
-  opacity: 0.8;
+  display: none;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -7588,4 +7698,14 @@ footer {
   .content-frame {
     -webkit-overflow-scrolling: touch;
   }
+}
+
+.alert-danger {
+  color: #FFF;
+  background-color: #E5332A;
+  border: 0 none;
+}
+
+.alert h4 {
+  margin-bottom: 0;
 }

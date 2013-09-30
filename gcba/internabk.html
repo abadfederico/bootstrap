@@ -10,8 +10,6 @@
     <title>Jumbotron Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link type="text/css" rel="stylesheet" media="screen" href="sidetap.css" />
-     <link type="text/css" rel="stylesheet" media="screen" href="default.css" />
     <link href="../dist/css/bootstrap.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 
@@ -23,146 +21,95 @@
   </head>
 
   <body>
-
-    <div class="sidetap">
-
-      <div class="stp-nav">
-        <div>
-          <nav>
-            <a href="#" class="selected">Inicio</a>
-            <a href="#">La ciudad</a>
-            <a href="#">Gobierno</a>
-            <a href="#">Atencion Ciudadana</a>
-            <a href="#">Info Publica</a>
-            <a href="#">Noticias</a>
-          </nav>
+    <header id="gcba-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="pull-left">
+              <img src="img/logo.png" />
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="dropdown pull-right user-box">
+              <span class="glyphicon glyphicon-user"></span>
+              <a data-toggle="dropdown" href="#">Hola, <strong>Abad</strong> <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mi Panel</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar mi Perfil</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Salir</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <form class="" role="search">
+              <div class="form-group">
+                <input type="search" class="form-control search input-lg" placeholder="Buscador...">
+              </div>
+              <button type="submit" class="btn btn-link btn-search"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+          </div>
         </div>
-      </div>  <!-- End stp-nav -->
+      </div>
+    </header>
+   <div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" style="height: 1px;">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Inicio</a></li>
+            <li><a href="#about">La ciudad</a></li>
+            <li><a href="#contact">Gobierno</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tramites <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Info Publica</a></li>
+            <li><a href="#contact">Turismo</a></li>
+            <li><a href="#contact">Noticias</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
 
-      <div class="stp-content" id="content">
-        <header class="stp-fake-header">&nbsp;</header>
-        <div class="stp-overlay nav-toggle">&nbsp;</div>
-        <div class="stp-content-panel">
-          <header class="gcba-header mobile-only hidden-md hidden-lg">
-            <div class="container">
-              <a href="javascript:void(0)" class="header-button icon menu"><span class="glyphicon glyphicon-list"></span></a>
-              <a href="#" class="title-bar">Buenos Aires Ciudad</a>
-              <a href="javascript:void(0)" class="header-button icon menu right"><span class="glyphicon glyphicon-search"></span></a>
-            </div>
-          </header> <!-- HEADER MOBILE -->
-
-
-          <header class="gcba-header visible-md visible-lg">
-          <div class="container ">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="pull-left">
-                  <img src="img/logo.png" />
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="dropdown pull-right user-box">
-                  <span class="glyphicon glyphicon-user"></span>
-                  <a data-toggle="dropdown" href="#">Hola, <strong>Abad</strong> <span class="caret"></span></a>
-                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mi Panel</a></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar mi Perfil</a></li>
-                    <li role="presentation" class="divider"></li>
-                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Salir</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <form class="" role="search">
-                  <div class="form-group">
-                    <input type="search" class="form-control search input-lg" placeholder="Buscador...">
-                  </div>
-                  <button type="submit" class="btn btn-link btn-search"><span class="glyphicon glyphicon-search"></span></button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </header> <!-- HEADER DSKTOP -->
-
-
-        <div class="navbar navbar-inverse  visible-md visible-lg">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="navbar-collapse collapse" style="height: 1px;">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Inicio</a></li>
-                <li><a href="#about">La ciudad</a></li>
-                <li><a href="#contact">Gobierno</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tramites <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li class="dropdown-header">Nav header</li>
-                      <li><a href="#">Separated link</a></li>
-                      <li><a href="#">One more separated link</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#contact">Info Publica</a></li>
-                  <li><a href="#contact">Turismo</a></li>
-                  <li><a href="#contact">Noticias</a></li>
-                </ul>
-            </div><!--/.navbar-collapse -->
-          </div>
-        </div><!-- NAVBAR -->
-    <div class="stp-content-frame">
-    <div class="stp-content-body">
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    
+    <div class="cover">
 
-    <div class="navbar visible-md visible-lg">
+        <div class="bread">
           <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="navbar-collapse collapse" style="height: 1px;">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Padrón de médicos</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Normativas <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li class="dropdown-header">Nav header</li>
-                      <li><a href="#">Separated link</a></li>
-                      <li><a href="#">One more separated link</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#contact">Enlaces</a></li>
-                </ul>
-            </div><!--/.navbar-collapse -->
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Library</a></li>
+              <li class="active">Data</li>
+            </ol>
           </div>
-        </div><!-- NAVBAR -->
+        </div>
+        <div class="caption-cover">
+        <h1>Registro Civil</h1>
+        <p>Solicitud de certificados de Registro Civil (nacimiento, matrimonio y defunción) y Vehiculos Motorizados e información sobre su labor.</p>
+        </div>
+        <img src="img/1.jpg" />
 
-      
-      <div class="news-slide news-interna">
-      <div class="container">  
+    </div>
+    <div class="news">
+    <div class="container">
       <div id="carousel-example-generic" class="carousel slide">
         <!-- Indicators -->
-        <ol class="carousel-indicators hidden-md hidden-lg">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
+
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
@@ -183,7 +130,7 @@
 
            <div class="item">
             <img src="http://www.buenosaires.gob.ar/sites/gcaba/files/styles/noticias_slidergrande/public/field/image/img_5664.jpg" alt="...">
-            <div class="carousel-caption">
+              <div class="container">
                 <h2>Antes y después de las obras</h2>
                 <p>Galería de imágenes del renovado Centro de Transferencia Constitución. La plaza recuperada, nuevos puestos de venta y refugios más confortables.</p>
             </div>
@@ -198,34 +145,32 @@
         <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
           <span class="icon-next"></span>
         </a>
+        </div>
       </div>
-     </div>
-    </div> <!-- news slide -->
-   
-
+    </div>
     <div class="shortcuts">
       <div class="container">
         <!-- Example row of columns -->
         <div class="row">
-          <div class="col-md-3 col-xs-6">
+          <div class="col-md-3">
             <a class="circle softblue" href="">
               <span class="glyphicon glyphicon-list-alt"></span>
             </a>
             <h2><a href="">Guia de Tramites</a></h2>
           </div>
-          <div class="col-md-3 col-xs-6">
+          <div class="col-md-3">
             <a class="circle green" href="">
               <span class="glyphicon glyphicon-user"></span>
             </a>
             <h2><a href="">Atencion Ciudadana</a></h2>
          </div>
-          <div class="col-md-3 col-xs-6">
+          <div class="col-md-3">
             <a class="circle softgreen" href="">
               <span class="glyphicon glyphicon-tree-deciduous"></span>
             </a>
             <h2><a href="">Ciudad Verde</a></h2>
           </div>
-          <div class="col-md-3 col-xs-6">
+          <div class="col-md-3">
             <a class="circle" href="">
               <span class="glyphicon glyphicon-map-marker"></span>
             </a>
@@ -281,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 visible-md visible-lg">
+            <div class="col-md-4">
               <img src="http://adn.buenosaires.gob.ar/www/images/7102aa5198211a9cd0bde49acf172315.png" />
             </div>
           </div>
@@ -293,10 +238,7 @@
           <div class="row">
             <div class="col-md-2">
               <h4>La Ciudad</h4>
-              <select class="hidden-md form-control">
-                <option>Ciudad limpia</option>
-              </select>
-              <ul class="visible-md ">
+              <ul>
                 <li><a href="">Ciudad Limpia</a></li>
                 <li><a href="">Mapa Interactivo</a></li>
                 <li><a href="">Agenda Cultural</a></li>
@@ -325,10 +267,7 @@
 
             <div class="col-md-2">
               <h4>Gobierno</h4>
-              <select class="hidden-md form-control">
-                <option>Jefe de Gobierno</option>
-              </select>
-              <ul class="visible-md">
+              <ul>
                 <li><a href="">Jefe de Gobierno</a></li>
                 <li><a href="">Vicejefatura de Gobierno</a></li>
                 <li><a href="">Jefatura de Gabinete</a></li>
@@ -365,10 +304,7 @@
 
             <div class="col-md-2">
               <h4>Tramites</h4>
-              <select class="hidden-md form-control">
-                <option>Guia de tramites</option>
-              </select>
-              <ul class="visible-md">
+              <ul>
                 <li><a href="">Guía de Trámites</a></li>
                 <li><a href="">Bs As Online</a></li>
                 <li><a href="">Rentas</a></li>
@@ -392,10 +328,7 @@
 
             <div class="col-md-2">
               <h4>Info Publica</h4>
-              <select class="hidden-md form-control">
-                <option>Boletin Oficial</option>
-              </select>
-              <ul class="visible-md">
+              <ul>
                 <li><a href="">Boletín Oficial</a></li>
                 <li><a href="">Normativa</a></li>
                 <li><a href="">Organigrama</a></li>
@@ -422,9 +355,6 @@
                 <div class="form-group">
                   <select class="form-control">
                     <option>Celular</option>
-                    <option>Movistar</option>
-                    <option>Claro</option>
-                    <option>Personal</option>
                   </select>
                 </div>
                 <button class="btn btn-primary btn-block">Suscribirme</button>
@@ -436,23 +366,13 @@
           </div>
         </div>
       </footer>
-      </div>
-       </div>
-        </div>
-</div>
-      </div>
+
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
     <script src="../assets/js/jquery.js"></script>
     <script src="../dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="sidetap.js"></script>
-    <script>
-      var st = sidetap();
-      $(".header-button.menu").on("click",st.toggle_nav)
-    </script>
-    
   </body>
 </html>
