@@ -7014,7 +7014,11 @@ body {
 
 .navbar {
   margin-bottom: 0!important;
-  border-radius: 0 !important;
+  border-radius: 0!important;
+}
+
+.navbar-collapse {
+  padding: 0!important;
 }
 
 .news-slide {
@@ -7054,7 +7058,22 @@ body {
 }
 
 .news-slide .related ul li {
+  position: relative;
   list-style: none;
+}
+
+.news-slide .related ul li:hover span {
+  opacity: 1;
+}
+
+.news-slide .related ul li span {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  color: #FFD300;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
 }
 
 .news-slide .related ul li h3 {
