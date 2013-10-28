@@ -7185,7 +7185,7 @@ a {
 }
 
 body {
-  background-color: #EEE;
+  background-color: #FFF;
 }
 
 .gcba-header {
@@ -7464,7 +7464,6 @@ body {
 
 .shortcuts {
   padding: 50px 0;
-  margin-bottom: 50px;
   text-align: center;
   background: white;
 }
@@ -8032,6 +8031,7 @@ body .form-control {
 }
 
 .stp-content {
+  background: #FFF;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
        -o-box-sizing: border-box;
@@ -8090,4 +8090,25 @@ body .form-control {
 
 .stp-nav nav > a.selected:after {
   opacity: 1;
+}
+
+.modules-boxxes {
+  background: #EEE;
+}
+
+.space-contianer {
+  margin-top: 20px;
+}
+
+.header-content {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #CCC;
+}
+
+.header-content h1 {
+  margin-top: 0!important;
+}
+
+blockquote p {
+  font-family: 'Gotham';
 }
