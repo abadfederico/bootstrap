@@ -8105,8 +8105,25 @@ body .form-control {
   border-bottom: 1px solid #CCC;
 }
 
+.header-content .fecha {
+  font-weight: bold;
+  color: #999999;
+  text-transform: uppercase;
+}
+
 .header-content h1 {
   margin-top: 0!important;
+  letter-spacing: -2px;
+}
+
+.header-content p {
+  font-size: 16px;
+  color: #999999;
+}
+
+.image-big {
+  width: 100%;
+  margin: 20px 0;
 }
 
 blockquote p {
