@@ -7180,6 +7180,19 @@ td.visible-print {
   /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'Gotham Black';
+  font-style: normal;
+  font-weight: normal;
+  src: url('gotham-black.eot');
+  src: url('gotham-black.eot?#iefix') format('embedded-opentype'), url('gotham-black.woff') format('woff'), url('gotham-black.ttf') format('truetype'), url('gotham-black.svg#gotham_blackregular') format('svg');
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 19px;
+}
+
 a {
   font-weight: bold;
 }
@@ -7214,6 +7227,11 @@ body {
 .gcba-header .dropdown-menu {
   z-index: 2000;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -3px 0 #eeeeee;
+}
+
+.logo-gcba {
+  max-width: 225px;
+  margin: 4px 0;
 }
 
 .gcba-header.mobile-only {
@@ -7270,7 +7288,25 @@ body {
 
 @media (max-width: 768px) {
   .news-slide {
-    padding: 20px 0 ;
+    padding: 0 ;
+  }
+  .news-slide .container {
+    padding: 0;
+    margin: 0;
+    background: red;
+  }
+  .news-slide .container .carousel-inner {
+    border: 0;
+    border-radius: 0;
+  }
+  .news-slide .container .carousel-control {
+    background-image: none!important;
+  }
+  .news-slide .container .carousel-caption {
+    background: #000!important;
+  }
+  .news-slide .container .carousel-caption h2 {
+    color: #ffd300 !important;
   }
 }
 
@@ -7326,6 +7362,7 @@ body {
 
 .news-slide .related ul li h3 {
   margin: 0;
+  font-family: 'Gotham';
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: -1px;
@@ -7626,10 +7663,6 @@ footer ul li a:hover {
   border-radius: 0;
 }
 
-.cover .bread .breadcrumb {
-  background: none;
-}
-
 .cover .bread li {
   color: #FFF;
 }
@@ -7648,6 +7681,11 @@ footer ul li a:hover {
 
 .breadcrumb > li + li:before {
   content: "»" !important;
+}
+
+.breadcrumb {
+  padding: 8px 0;
+  background: transparent;
 }
 
 .boxxy {
@@ -7680,7 +7718,8 @@ footer ul li a:hover {
 }
 
 .boxxy .boxxy-content p {
-  color: #999999;
+  font-size: 16px;
+  color: #999;
 }
 
 .boxxy .boxxy-content .circle {
@@ -8093,6 +8132,7 @@ body .form-control {
 }
 
 .modules-boxxes {
+  padding: 30px 0;
   background: #EEE;
 }
 
@@ -8113,11 +8153,12 @@ body .form-control {
 
 .header-content h1 {
   margin-top: 0!important;
+  font-family: 'Gotham Black';
+  font-size: 52px;
   letter-spacing: -2px;
 }
 
 .header-content p {
-  font-size: 16px;
   color: #999999;
 }
 
@@ -8128,4 +8169,40 @@ body .form-control {
 
 blockquote p {
   font-family: 'Gotham';
+}
+
+q {
+  display: block;
+  width: 350px;
+  padding: 5px;
+  margin: 25px;
+  font-family: 'Gotham Black';
+  font-size: 38px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 38px;
+  letter-spacing: -1px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+q.right {
+  float: right;
+  margin-right: 0;
+}
+
+.share-twitter .fa-circle {
+  color: #2aa9e0;
+}
+
+.share-facebook .fa-circle {
+  color: #1f4284;
+}
+
+.share-gplus .fa-circle {
+  color: #d34a2a;
+}
+
+.share-mail .fa-circle {
+  color: #999999;
 }
